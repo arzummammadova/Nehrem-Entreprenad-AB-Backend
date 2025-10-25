@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:3000" }));
+app.use(cors({ origin: process.env.CLIENT_URL || "https://www.nehrem-entreprenad.se" }));
 app.use(bodyParser.json());
 
 // 🔹 Hastighetsbegränsning (rate limit)
