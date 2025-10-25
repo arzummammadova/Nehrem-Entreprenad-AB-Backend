@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 // 🔹 Hastighetsbegränsning (rate limit)
 const ipRequests = new Map();
-const RATE_LIMIT_REQUESTS = 3;
+const RATE_LIMIT_REQUESTS = 10;
 const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 timme
 
 const checkRateLimit = (ip) => {
